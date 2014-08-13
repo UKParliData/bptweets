@@ -1,0 +1,102 @@
+﻿{ "format" : "linked-data-api", "version" : "0.2", "result" : {"_about" : "http://lda.data.parliament.uk/briefingpapers.json", "definition" : "http://lda.data.parliament.uk/meta/briefingpapers.json", "extendedMetadataVersion" : "http://lda.data.parliament.uk/briefingpapers.json?_metadata=all", "first" : "http://lda.data.parliament.uk/briefingpapers.json?_page=0", "hasPart" : "http://lda.data.parliament.uk/briefingpapers.json", "isPartOf" : "http://lda.data.parliament.uk/briefingpapers.json", "items" : [{"_about" : "http://data.parliament.uk/resources/51370", "date" : [{"_value" : "2014-08-11T11:19:31.1085747+01:00", "_datatype" : "dateTime"}
+      ], "description" : ["Brief snapshot of recent changes in entrants to HE via UCAS"], "identifier" : "SN02629", "title" : ["Applicants and entrants to higher education: Social Indicators page"], "topic" : [{"_about" : "http://data.parliament.uk/resource/51370/topics/1", "prefLabel" : {"_value" : "Higher education"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/51370/topics/2", "prefLabel" : {"_value" : "Students"}
+      }
+      ], "type" : {"_about" : "http://data.parliament.uk/schema/parl#StandardNote", "label" : {"_value" : "Commons Library Standard Note"}
+      }
+    }
+    , {"_about" : "http://data.parliament.uk/resources/51372", "date" : [{"_value" : "2014-08-11T11:04:41.6856648+01:00", "_datatype" : "dateTime"}
+      ], "description" : ["Trends in examination results at Key Stage 2, GCSE and A level."], "identifier" : "SN02627", "title" : ["Examination results: Social Indicators page"], "topic" : [{"_about" : "http://data.parliament.uk/resource/51372/topics/1", "prefLabel" : {"_value" : "Further education"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/51372/topics/2", "prefLabel" : {"_value" : "Schools"}
+      }
+      ], "type" : {"_about" : "http://data.parliament.uk/schema/parl#StandardNote", "label" : {"_value" : "Commons Library Standard Note"}
+      }
+    }
+    , {"_about" : "http://data.parliament.uk/resources/51535", "date" : [{"_value" : "2014-08-11T10:39:59.724972+01:00", "_datatype" : "dateTime"}
+      ], "description" : ["Summary of data on teacher numbers, flows and vacancies"], "identifier" : "SN02626", "title" : ["Teachers: Social Indicators page"], "topic" : [{"_about" : "http://data.parliament.uk/resource/51535/topics/1", "prefLabel" : {"_value" : "Schools"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/51535/topics/2", "prefLabel" : {"_value" : "Teachers"}
+      }
+      ], "type" : {"_about" : "http://data.parliament.uk/schema/parl#StandardNote", "label" : {"_value" : "Commons Library Standard Note"}
+      }
+    }
+    , {"_about" : "http://data.parliament.uk/resources/89388", "date" : [{"_value" : "2014-08-08T16:26:18.8873008+01:00", "_datatype" : "dateTime"}
+      ], "description" : ["This POSTnote examines key factors affecting the growth of big data in transport and current and future applications, focusing on road and public transport. It also explores challenges to opening up, collecting, disseminating and using big data, and to sharing data whilst protecting users' privacy."], "identifier" : "POST PN 472", "title" : ["Big and Open Data in Transport"], "topic" : [{"_about" : "http://data.parliament.uk/resource/89388/topics/1", "prefLabel" : {"_value" : "Buses"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/89388/topics/2", "prefLabel" : {"_value" : "Data protection"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/89388/topics/3", "prefLabel" : {"_value" : "Information technology"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/89388/topics/4", "prefLabel" : {"_value" : "Motorcycles"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/89388/topics/5", "prefLabel" : {"_value" : "Planning"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/89388/topics/6", "prefLabel" : {"_value" : "Railways"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/89388/topics/7", "prefLabel" : {"_value" : "Roads"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/89388/topics/8", "prefLabel" : {"_value" : "Science"}
+      }
+      ], "type" : {"_about" : "http://data.parliament.uk/schema/parl#POSTNote", "label" : {"_value" : "POST Note"}
+      }
+    }
+    , {"_about" : "http://data.parliament.uk/resources/50840", "date" : [{"_value" : "2014-08-08T16:09:38.994418+01:00", "_datatype" : "dateTime"}
+      ], "description" : ["Looks at the lump sum payments that can be made from a private pension, such as the tax-free lump sum and the rules for small pots"], "identifier" : "SN02181", "title" : ["Pension lump sums"], "topic" : [{"_about" : "http://data.parliament.uk/resource/50840/topics/1", "prefLabel" : {"_value" : "Pensions"}
+      }
+      ], "type" : {"_about" : "http://data.parliament.uk/schema/parl#StandardNote", "label" : {"_value" : "Commons Library Standard Note"}
+      }
+    }
+    , {"_about" : "http://data.parliament.uk/resources/89387", "date" : [{"_value" : "2014-08-08T14:50:43.4660302+01:00", "_datatype" : "dateTime"}
+      ], "description" : ["This POSTnote outlines the different types and aims of these currencies. It also sets out how alternative currencies are being used and highlights regulatory and policy challenges regarding consumer protection, financial crime and taxation and benefits."], "identifier" : "POST PN 475", "title" : ["Alternative Currencies"], "topic" : [{"_about" : "http://data.parliament.uk/resource/89387/topics/1", "prefLabel" : {"_value" : "Benefits policy"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/89387/topics/2", "prefLabel" : {"_value" : "Consumers"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/89387/topics/3", "prefLabel" : {"_value" : "Crime"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/89387/topics/4", "prefLabel" : {"_value" : "Economic policy"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/89387/topics/5", "prefLabel" : {"_value" : "Family benefits"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/89387/topics/6", "prefLabel" : {"_value" : "International law"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/89387/topics/7", "prefLabel" : {"_value" : "International trade"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/89387/topics/8", "prefLabel" : {"_value" : "Internet and cybercrime"}
+      }
+      ], "type" : {"_about" : "http://data.parliament.uk/schema/parl#POSTNote", "label" : {"_value" : "POST Note"}
+      }
+    }
+    , {"_about" : "http://data.parliament.uk/resources/50709", "date" : [{"_value" : "2014-08-08T12:53:36.7738675+01:00", "_datatype" : "dateTime"}
+      ], "description" : ["Trade: Trade statistics on the current account for the UK ."], "identifier" : "SN02815", "title" : ["Trade"], "topic" : [{"_about" : "http://data.parliament.uk/resource/50709/topics/1", "prefLabel" : {"_value" : "Economic situation"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/50709/topics/2", "prefLabel" : {"_value" : "International trade"}
+      }
+      ], "type" : {"_about" : "http://data.parliament.uk/schema/parl#StandardNote", "label" : {"_value" : "Commons Library Standard Note"}
+      }
+    }
+    , {"_about" : "http://data.parliament.uk/resources/57514", "date" : [{"_value" : "2014-08-08T12:26:07.1503024+01:00", "_datatype" : "dateTime"}
+      ], "description" : ["Looks at the announcement in Budget 2014 that from April 2015 people with savings in a defined contribution scheme aged 55 or over would be able to choose when and how to access their pension saving, subject to their marginal rate of income tax"], "identifier" : "SN06891", "title" : ["Flexibility for DC pension savers from April 2015"], "topic" : [{"_about" : "http://data.parliament.uk/resource/57514/topics/1", "prefLabel" : {"_value" : "Pensions"}
+      }
+      ], "type" : {"_about" : "http://data.parliament.uk/schema/parl#StandardNote", "label" : {"_value" : "Commons Library Standard Note"}
+      }
+    }
+    , {"_about" : "http://data.parliament.uk/resources/51253", "date" : [{"_value" : "2014-08-08T11:29:51.1311433+01:00", "_datatype" : "dateTime"}
+      ], "description" : ["The Coalition's Programme for Government promised to \u201cthrow open the doors of public bodies, to enable the public to hold politicians and public bodies to account\u201d. The matters covered in this Standard Note apply to England only, with the exception of pay policy statements, which also apply in Wales."], "identifier" : "SN06046", "title" : ["Local government transparency in England"], "topic" : [{"_about" : "http://data.parliament.uk/resource/51253/topics/1", "prefLabel" : {"_value" : "Freedom of information"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/51253/topics/2", "prefLabel" : {"_value" : "Local government"}
+      }
+      , {"_about" : "http://data.parliament.uk/resource/51253/topics/3", "prefLabel" : {"_value" : "Pay"}
+      }
+      ], "type" : {"_about" : "http://data.parliament.uk/schema/parl#StandardNote", "label" : {"_value" : "Commons Library Standard Note"}
+      }
+    }
+    , {"_about" : "http://data.parliament.uk/resources/87546", "date" : [{"_value" : "2014-08-08T11:00:35.6554717+01:00", "_datatype" : "dateTime"}
+      ], "description" : ["This Library Note provides an overview of contemporary political opinion polls."], "identifier" : "LLN 2014/028", "title" : ["Understanding and Sourcing Political Opinion Polls"], "topic" : [{"_about" : "http://data.parliament.uk/resource/87546/topics/1", "prefLabel" : {"_value" : "Constitution"}
+      }
+      ], "type" : {"_about" : "http://data.parliament.uk/schema/parl#LordsLibraryNote", "label" : {"_value" : "Lords Library Note"}
+      }
+    }
+    ], "itemsPerPage" : 10, "next" : "http://lda.data.parliament.uk/briefingpapers.json?_page=1", "page" : 0, "startIndex" : 1, "totalResults" : 5385, "type" : ["http://purl.org/linked-data/api/vocab#ListEndpoint", "http://purl.org/linked-data/api/vocab#Page"]}
+}
