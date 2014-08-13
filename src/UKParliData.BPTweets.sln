@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0D6084
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UKParliData.BPTweets.Tests", "UKParliData.BPTweets.Tests\UKParliData.BPTweets.Tests.csproj", "{5910932D-7737-4698-9590-B5712D02FFBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,10 @@ Global
 		{C21DE0CC-5326-4A7A-866F-956B00A2935A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C21DE0CC-5326-4A7A-866F-956B00A2935A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C21DE0CC-5326-4A7A-866F-956B00A2935A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5910932D-7737-4698-9590-B5712D02FFBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5910932D-7737-4698-9590-B5712D02FFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5910932D-7737-4698-9590-B5712D02FFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5910932D-7737-4698-9590-B5712D02FFBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
