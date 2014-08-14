@@ -38,7 +38,8 @@ namespace UKParliData.BPTweets
             var tweetedIDs = this.log.GetTweetedIDs();
             foreach (var bp in reader.ReadAll().Where(x => !tweetedIDs.Contains(x.Identifier)).OrderBy(x => x.Date))
             {
-                client.Tweet(bp.Title);
+                string tweet = String.Format("New {0}: {1}", bp.Type, bp.Title);
+                client.Tweet(tweet);
             }
         }
     }

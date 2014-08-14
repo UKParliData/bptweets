@@ -46,13 +46,13 @@ namespace UKParliData.BPTweets.Tests
 
             // First tweet should have the correct message
             Assert.AreEqual(
-                "Understanding and Sourcing Political Opinion Polls",
+                "New Lords Library Note: Understanding and Sourcing Political Opinion Polls",
                 tweets.First()
             );
 
             // Last tweet should have the correct message
             Assert.AreEqual(
-                "Applicants and entrants to higher education: Social Indicators page",
+                "New Commons Library Standard Note: Applicants and entrants to higher education: Social Indicators page",
                 tweets.Last()
             );
         }
@@ -87,13 +87,13 @@ namespace UKParliData.BPTweets.Tests
 
             // First tweet should have the correct message
             Assert.AreEqual(
-                "Alternative Currencies",
+                "New POST Note: Alternative Currencies",
                 tweets.First()
             );
 
             // Last tweet should have the correct message
             Assert.AreEqual(
-                "Applicants and entrants to higher education: Social Indicators page",
+                "New Commons Library Standard Note: Applicants and entrants to higher education: Social Indicators page",
                 tweets.Last()
             );
         
