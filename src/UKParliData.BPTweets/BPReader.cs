@@ -11,16 +11,9 @@ namespace UKParliData.BPTweets
 {
     public class BPReader
     {
-        private Stream _stream;
-
-        public BPReader(Stream stream)
+        public IEnumerable<BriefingPaper> ReadAll(Stream stream)
         {
-            this._stream = stream;
-        }
-
-        public IEnumerable<BriefingPaper> ReadAll()
-        {
-            using (var reader = new StreamReader(_stream))
+            using (var reader = new StreamReader(stream))
             {
                 var obj = (JObject) JToken.ReadFrom(new JsonTextReader(reader));
                 return
