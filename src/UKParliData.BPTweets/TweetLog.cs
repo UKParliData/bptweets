@@ -14,6 +14,10 @@ namespace UKParliData.BPTweets
         public TweetLog(string filename)
         {
             this.filename = filename;
+            if (!File.Exists(this.filename))
+            {
+                using (var f = File.Create(this.filename)) { }
+            }
         }
 
         public ISet<string> GetTweetedIDs()
