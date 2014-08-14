@@ -172,3 +172,6 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+
+# Other
+src/UKParliData.BPTweets/private.config
