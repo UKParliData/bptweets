@@ -62,6 +62,8 @@ namespace UKParliData.BPTweets.Tests
         public void TweetsOnlyUnsentBriefingPapers()
         {
             var tweets = new List<string>();
+            var loggedIDs = new List<string>();
+
             var alreadyTweeted = new HashSet<string>(
                 new string[] {
                     "LLN 2014/028",
@@ -78,6 +80,7 @@ namespace UKParliData.BPTweets.Tests
 
             var log = new Mock<ITweetLog>();
             log.Setup(x => x.GetTweetedIDs()).Returns(alreadyTweeted);
+            log.Setup(x => x.LogTweetedID(It.IsAny<string>())).Callback<string>(x => loggedIDs.Add(x));
 
             var app = new Program(reader.Object, log.Object, client.Object);
             app.Run();
@@ -96,7 +99,11 @@ namespace UKParliData.BPTweets.Tests
                 "New Commons Library Standard Note: Applicants and entrants to higher education: Social Indicators page",
                 tweets.Last()
             );
-        
+
+            // The new tweets need to be added to the tweet log
+            log.Verify(x => x.LogTweetedID(It.IsAny<string>()), Times.Exactly(5));
+
+            Assert.AreEqual("SN02629", loggedIDs.Last());
         }
     }
 }

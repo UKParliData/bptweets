@@ -40,6 +40,7 @@ namespace UKParliData.BPTweets
             {
                 string tweet = String.Format("New {0}: {1}", bp.Type, bp.Title);
                 client.Tweet(tweet);
+                log.LogTweetedID(bp.Identifier);
             }
         }
     }
