@@ -50,8 +50,13 @@
   <ItemGroup>
     <Compile Include="BPReader.cs" />
     <Compile Include="BriefingPaper.cs" />
+    <Compile Include="IBPReader.cs" />
+    <Compile Include="ITweetLog.cs" />
+    <Compile Include="ITwitterClient.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TweetLog.cs" />
+    <Compile Include="TwitterClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
