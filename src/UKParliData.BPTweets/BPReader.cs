@@ -9,7 +9,7 @@ using Newtonsoft.Json.Linq;
 
 namespace UKParliData.BPTweets
 {
-    public class BPReader
+    public class BPReader : IBPReader
     {
 
         public IEnumerable<BriefingPaper> ReadAll()
