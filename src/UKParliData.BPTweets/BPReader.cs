@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -11,6 +11,20 @@ namespace UKParliData.BPTweets
 {
     public class BPReader
     {
+
+        public IEnumerable<BriefingPaper> ReadAll()
+        {
+            var requestUrl = ConfigurationManager.AppSettings["BPFeedUrl"];
+
+            var request = WebRequest.CreateHttp(requestUrl);
+            using (var response = request.GetResponse())
+            using (var stream = response.GetResponseStream())
+            {
+                return this.ReadAll(stream);
+            }
+        }
+
+
         public IEnumerable<BriefingPaper> ReadAll(Stream stream)
         {
             using (var reader = new StreamReader(stream))
