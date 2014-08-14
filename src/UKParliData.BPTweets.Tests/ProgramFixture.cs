@@ -56,5 +56,47 @@ namespace UKParliData.BPTweets.Tests
                 tweets.Last()
             );
         }
+
+
+        [Test]
+        public void TweetsOnlyUnsentBriefingPapers()
+        {
+            var tweets = new List<string>();
+            var alreadyTweeted = new HashSet<string>(
+                new string[] {
+                    "LLN 2014/028",
+                    "SN06046",
+                    "SN06891",
+                    "SN02815",
+                    "POST PN 472"
+                }
+            );
+
+            var reader = GetTestBPReader();
+            var client = new Mock<ITwitterClient>();
+            client.Setup(x => x.Tweet(It.IsAny<string>())).Callback<string>(x => tweets.Add(x));
+
+            var log = new Mock<ITweetLog>();
+            log.Setup(x => x.GetTweetedIDs()).Returns(alreadyTweeted);
+
+            var app = new Program(reader.Object, log.Object, client.Object);
+            app.Run();
+
+            // We should have tweeted ten times
+            client.Verify(x => x.Tweet(It.IsAny<string>()), Times.Exactly(5));
+
+            // First tweet should have the correct message
+            Assert.AreEqual(
+                "Alternative Currencies",
+                tweets.First()
+            );
+
+            // Last tweet should have the correct message
+            Assert.AreEqual(
+                "Applicants and entrants to higher education: Social Indicators page",
+                tweets.Last()
+            );
+        
+        }
     }
 }
