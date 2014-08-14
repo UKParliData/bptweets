@@ -51,6 +51,7 @@
     <Compile Include="FeedHelper.cs" />
     <Compile Include="ProgramFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TweetLogFixture.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UKParliData.BPTweets\UKParliData.BPTweets.csproj">
