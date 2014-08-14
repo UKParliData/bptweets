@@ -14,5 +14,7 @@ namespace UKParliData.BPTweets
         public string Identifier { get; set; }
 
         public DateTime Date { get; set; }
+
+        public string Type { get; set; }
     }
 }

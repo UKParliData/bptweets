@@ -42,7 +42,8 @@ namespace UKParliData.BPTweets
                         Title = (string)(item["title"].First()),
                         Description = (string)(item["description"].First()),
                         Identifier = (string)item["identifier"],
-                        Date = (DateTime)(item["date"][0]["_value"])
+                        Date = (DateTime)(item["date"][0]["_value"]),
+                        Type = (string)(item["type"]["label"]["_value"])
                     };
             }
         }

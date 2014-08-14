@@ -28,6 +28,11 @@ namespace UKParliData.BPTweets.Tests
                     new DateTime(2014, 8, 11, 11, 18, 31, 108) - first.Date,
                     TimeSpan.FromMilliseconds(1)
                 );
+
+                Assert.AreEqual(
+                    "Commons Library Standard Note",
+                    first.Type
+                );
             }
         }
     }
