@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NUnit.Framework;
 
 namespace UKParliData.BPTweets.Tests
@@ -11,16 +7,10 @@ namespace UKParliData.BPTweets.Tests
     [TestFixture]
     public class BPReaderFixture
     {
-        private Stream GetFeed()
-        {
-            Type t = this.GetType();
-            return t.Assembly.GetManifestResourceStream(t, "feed.json");
-        }
-
         [Test]
         public void CanParseFeed()
         {
-            using (var stream = GetFeed())
+            using (var stream = FeedHelper.GetFeed())
             {
                 var briefingPapers = new BPReader().ReadAll(stream).ToList();
                 Assert.AreEqual(10, briefingPapers.Count);
