@@ -32,7 +32,7 @@ namespace UKParliData.BPTweets
 
         public void Run()
         {
-            foreach (var bp in reader.ReadAll())
+            foreach (var bp in reader.ReadAll().OrderBy(x => x.Date))
             {
                 client.Tweet(bp.Title);
             }
