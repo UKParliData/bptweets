@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UKParliData.BPTweets
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -30,9 +30,12 @@ namespace UKParliData.BPTweets
             this.client = client;
         }
 
-        void Run()
+        public void Run()
         {
-
+            foreach (var bp in reader.ReadAll())
+            {
+                client.Tweet(bp.Title);
+            }
         }
     }
 }
