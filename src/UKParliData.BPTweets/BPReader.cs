@@ -11,12 +11,17 @@ namespace UKParliData.BPTweets
 {
     public class BPReader : IBPReader
     {
+        private string url;
+
+        public BPReader(string url)
+        {
+            this.url = url;
+        }
+
 
         public IEnumerable<BriefingPaper> ReadAll()
         {
-            var requestUrl = ConfigurationManager.AppSettings["BPFeedUrl"];
-
-            var request = WebRequest.CreateHttp(requestUrl);
+            var request = WebRequest.CreateHttp(url);
             using (var response = request.GetResponse())
             using (var stream = response.GetResponseStream())
             {

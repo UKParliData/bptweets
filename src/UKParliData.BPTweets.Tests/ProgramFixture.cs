@@ -13,7 +13,7 @@ namespace UKParliData.BPTweets.Tests
     {
         private Mock<IBPReader> GetTestBPReader()
         {
-            var baseReader = new BPReader();
+            var baseReader = new BPReader(null);
             var reader = new Mock<IBPReader>();
             reader.Setup(x => x.ReadAll()).Returns(() => {
                 using (var stream = FeedHelper.GetFeed())

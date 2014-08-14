@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,10 +12,12 @@ namespace UKParliData.BPTweets
         static void Main(string[] args)
         {
             new Program(
-                new BPReader(),
+                new BPReader(ConfigurationManager.AppSettings["BPFeedUrl"]),
                 new TweetLog(),
                 new TwitterClient()
             ).Run();
+
+            Console.ReadLine();
         }
 
 

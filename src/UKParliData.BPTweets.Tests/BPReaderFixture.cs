@@ -12,7 +12,7 @@ namespace UKParliData.BPTweets.Tests
         {
             using (var stream = FeedHelper.GetFeed())
             {
-                var briefingPapers = new BPReader().ReadAll(stream).ToList();
+                var briefingPapers = new BPReader(null).ReadAll(stream).ToList();
                 Assert.AreEqual(10, briefingPapers.Count);
                 var first = briefingPapers[0];
                 Assert.AreEqual(
