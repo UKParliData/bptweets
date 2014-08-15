@@ -22,7 +22,7 @@ namespace UKParliData.BPTweets
                 new Program(
                     new BPReader(ConfigurationManager.AppSettings["BPFeedUrl"]),
                     new TweetLog("log.txt"),
-                    new TwitterClient()
+                    client
                 ).Run();
             }
         }
