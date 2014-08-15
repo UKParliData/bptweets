@@ -25,7 +25,6 @@ namespace UKParliData.BPTweets
                     new TwitterClient()
                 ).Run();
             }
-            Console.ReadLine();
         }
 
 
