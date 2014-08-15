@@ -11,7 +11,18 @@ namespace UKParliData.BPTweets
     {
         public void Tweet(string tweet)
         {
-            Console.WriteLine(tweet);
+            var auth = new PinAuthorizer() {
+                CredentialStore = new InMemoryCredentialStore() {
+                    ConsumerKey = ConfigurationManager.AppSettings["Twitter.ConsumerKey"],
+                    ConsumerSecret = ConfigurationManager.AppSettings["Twitter.ConsumerSecret"],
+                    OAuthToken = ConfigurationManager.AppSettings["Twitter.AccessToken"],
+                    OAuthTokenSecret = ConfigurationManager.AppSettings["Twitter.AccessTokenSecret"]
+                }
+            };
+
+            using (var ctx = new TwitterContext(auth)) {
+                ctx.TweetAsync(tweet).Wait();
+            }
         }
 
 
