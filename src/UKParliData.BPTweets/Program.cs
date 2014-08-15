@@ -47,7 +47,12 @@ namespace UKParliData.BPTweets
             var tweetedIDs = this.log.GetTweetedIDs();
             foreach (var bp in reader.ReadAll().Where(x => !tweetedIDs.Contains(x.Identifier)).OrderBy(x => x.Date))
             {
-                string tweet = String.Format("New {0}: {1}", bp.Type, bp.Title);
+                string tweet = String.Format("New {0}: {1} {2} http://www.parliament.uk/briefing-papers/{3}",
+                    bp.Type,
+                    bp.Identifier,
+                    bp.Title,
+                    bp.Identifier.Replace("/", "-").Replace(" ", "-")
+                );
                 client.Tweet(tweet);
                 log.LogTweetedID(bp.Identifier);
             }

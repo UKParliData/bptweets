@@ -46,13 +46,13 @@ namespace UKParliData.BPTweets.Tests
 
             // First tweet should have the correct message
             Assert.AreEqual(
-                "New Lords Library Note: Understanding and Sourcing Political Opinion Polls",
+                "New Lords Library Note: LLN 2014/028 Understanding and Sourcing Political Opinion Polls http://www.parliament.uk/briefing-papers/LLN-2014-028",
                 tweets.First()
             );
 
             // Last tweet should have the correct message
             Assert.AreEqual(
-                "New Commons Library Standard Note: Applicants and entrants to higher education: Social Indicators page",
+                "New Commons Library Standard Note: SN02629 Applicants and entrants to higher education: Social Indicators page http://www.parliament.uk/briefing-papers/SN02629",
                 tweets.Last()
             );
         }
@@ -90,13 +90,13 @@ namespace UKParliData.BPTweets.Tests
 
             // First tweet should have the correct message
             Assert.AreEqual(
-                "New POST Note: Alternative Currencies",
+                "New POST Note: POST PN 475 Alternative Currencies http://www.parliament.uk/briefing-papers/POST-PN-475",
                 tweets.First()
             );
 
             // Last tweet should have the correct message
             Assert.AreEqual(
-                "New Commons Library Standard Note: Applicants and entrants to higher education: Social Indicators page",
+                "New Commons Library Standard Note: SN02629 Applicants and entrants to higher education: Social Indicators page http://www.parliament.uk/briefing-papers/SN02629",
                 tweets.Last()
             );
 
