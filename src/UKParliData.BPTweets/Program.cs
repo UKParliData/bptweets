@@ -55,6 +55,7 @@ namespace UKParliData.BPTweets
                 );
                 client.Tweet(tweet);
                 log.LogTweetedID(bp.Identifier);
+                Console.WriteLine(tweet);
             }
         }
     }
