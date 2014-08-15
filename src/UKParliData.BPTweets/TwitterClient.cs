@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Diagnostics;
+using System.IO;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using LinqToTwitter;
@@ -42,7 +43,14 @@ namespace UKParliData.BPTweets
 
             await auth.AuthorizeAsync();
 
-            var doc = XDocument.Load("private.config");
+            XDocument doc;
+            if (File.Exists("private.config")) {
+                doc = XDocument.Load("private.config");
+            }
+            else {
+                doc = XDocument.Parse("<appSettings />");
+            }
+
             var el = doc.Element("appSettings");
             el.Add(new XElement("add",
                 new XAttribute("key", "Twitter.AccessToken"),
