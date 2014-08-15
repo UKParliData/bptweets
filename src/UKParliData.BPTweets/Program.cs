@@ -11,12 +11,20 @@ namespace UKParliData.BPTweets
     {
         static void Main(string[] args)
         {
-            new Program(
-                new BPReader(ConfigurationManager.AppSettings["BPFeedUrl"]),
-                new TweetLog("log.txt"),
-                new TwitterClient()
-            ).Run();
+            var client = new TwitterClient();
 
+            if (args.Contains("/a", StringComparer.OrdinalIgnoreCase))
+            {
+                client.Authorise().Wait();
+            }
+            else
+            {
+                new Program(
+                    new BPReader(ConfigurationManager.AppSettings["BPFeedUrl"]),
+                    new TweetLog("log.txt"),
+                    new TwitterClient()
+                ).Run();
+            }
             Console.ReadLine();
         }
 
@@ -28,6 +36,7 @@ namespace UKParliData.BPTweets
 
         public Program(IBPReader reader, ITweetLog log, ITwitterClient client)
         {
+
             this.reader = reader;
             this.log = log;
             this.client = client;
