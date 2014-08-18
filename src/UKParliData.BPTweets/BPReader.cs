@@ -21,7 +21,7 @@ namespace UKParliData.BPTweets
 
         public IEnumerable<BriefingPaper> ReadAll()
         {
-            var request = WebRequest.CreateHttp(url);
+            var request = WebRequest.Create(url) as HttpWebRequest;
             using (var response = request.GetResponse())
             using (var stream = response.GetResponseStream())
             {
