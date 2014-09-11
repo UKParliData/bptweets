@@ -7,10 +7,22 @@ using System.Threading.Tasks;
 
 namespace UKParliData.BPTweets
 {
+    /// <summary>
+    /// This is the main start up class for the program.
+    /// </summary>
+
     public class Program
     {
         public static readonly int ShortenedUrlLength
             = Int32.Parse(ConfigurationManager.AppSettings["Twitter.ShortenedUrlLength"]);
+
+        /// <summary>
+        /// This is the main entry point. 
+        /// </summary>
+        /// <param name="args">
+        /// Use the /a argument to set up the pin number given by Twitter when setting up authentication for the account.
+        /// If no argument is specified program just publishes the tweets.
+        /// </param>
 
         static void Main(string[] args)
         {
